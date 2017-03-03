@@ -18,18 +18,29 @@ function Pizza(inputSize, arrayToppings){
 
 
 Pizza.prototype.fullDetails = function(){
-  return "You ordered a " + this.Size + " pizza with the following toppings: " + this.Toppings + " (" + this.numberOfToppings + ")" ;
+    return "You ordered a " + this.Size + " pizza with the following " + this.numberOfToppings + " topping(s): " + this.Toppings + "."
 }
+
+// Pizza.prototype.ListToppings = function (){
+//   for (var i = 0; i<=this.numberOfToppings; i++){
+//       return ("<li>" + this.Toppings[i] + "</li>");
+//   }
+// }
 
 Pizza.prototype.Price = function(){
   var price=10.00;
   if (this.Size==="small"){
     price = price - 2.50
   }
-  else {
+  else if (this.Size==="medium"){
     price=price;
   }
-  return "It costs " + price;
+  else {
+    price = price + 3.50;
+  }
+  var increment = this.numberOfToppings*0.75;
+  var finalPrice= increment + price;
+  return "That will be " + "$" + finalPrice;
   console.log(price);
 }
 
@@ -57,6 +68,7 @@ $(function(){
       console.log(newPizza.Size);
       console.log(newPizza.Toppings);
       $("#answers").text(newPizza.fullDetails());
+      // $("#answers").append(newPizza.ListToppings());
       $("#answers").append(newPizza.Price());
     });
       // $("#answers").append(newPizza);
