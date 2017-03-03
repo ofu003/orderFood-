@@ -1,11 +1,12 @@
 function Pizza(inputSize, arrayToppings){
   this.Size = inputSize;
   this.Toppings = arrayToppings;
+  this.numberOfToppings = arrayToppings.length;
 }
 
 
 Pizza.prototype.fullDetails = function(){
-  return "You ordered a " + this.Size + "pizza with the following toppings: " + this.Toppings;
+  return "You ordered a " + this.Size + "pizza with the following toppings: " + this.Toppings + " (" + this.numberOfToppings + ")";
 }
 
 
@@ -24,6 +25,7 @@ $(function(){
       var inputToppings = $(this).val();
       arrayToppings.push(inputToppings);
       console.log(arrayToppings);
+      console.log(arrayToppings.length);
       //$("#answers").append(inputToppings);
       // var inputToppings;
       var newPizza = new Pizza(inputSize, arrayToppings);
