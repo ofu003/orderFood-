@@ -1,11 +1,11 @@
-function Pizza(inputSize, inputToppings){
+function Pizza(inputSize, arrayToppings){
   this.Size = inputSize;
-  this.Toppings = inputToppings;
+  this.Toppings = arrayToppings;
 }
 
 
 Pizza.prototype.fullDetails = function(){
-  return "You ordered a " + this.Size + "pizza with the following toppings" + this.Toppings;
+  return "You ordered a " + this.Size + "pizza with the following toppings: " + this.Toppings;
 }
 
 
@@ -19,15 +19,18 @@ $(function(){
     var inputSize = $("#size").val();
 
     var inputToppings;
+    var arrayToppings=[];
     $("input:checkbox[name=toppings]:checked").each(function(){
       var inputToppings = $(this).val();
+      arrayToppings.push(inputToppings);
+      console.log(arrayToppings);
       //$("#answers").append(inputToppings);
       // var inputToppings;
-      var newPizza = new Pizza(inputSize, inputToppings);
+      var newPizza = new Pizza(inputSize, arrayToppings);
       console.log(newPizza);
       console.log(newPizza.Size);
       console.log(newPizza.Toppings);
-      $("#answers").append(newPizza.fullDetails());
+      $("#answers").text(newPizza.fullDetails());
     });
       // $("#answers").append(newPizza);
       //var newPizza = new Pizza(inputSize, inputToppings);
