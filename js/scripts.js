@@ -5,16 +5,6 @@ function Pizza(inputSize, arrayToppings){
   //this.price = price;
 }
 
-// function price(inputSize){
-//   var price = 10.00;
-//   if (inputSize==="small"){
-//     price = (price -2.50);
-//   }
-//   else {
-//     price = price;
-//   }
-//   return price;
-// }
 
 
 Pizza.prototype.fullDetails = function(){
@@ -40,7 +30,7 @@ Pizza.prototype.Price = function(){
   }
   var increment = this.numberOfToppings*0.75;
   var finalPrice= increment + price;
-  return "That will be " + "$" + finalPrice;
+  return " That will be " + "$" + finalPrice.toFixed([2]);
   console.log(price);
 }
 
