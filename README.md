@@ -2,13 +2,13 @@
 
 ####  17 March 2017
 
-#### Author: Oliver Fu
+### Author: Oliver Fu
 
-### Description
+## Description
 
-#### This webpage allows users to order pizza with toppings, choose a size, and see the final cost.
+### This webpage allows users to order pizza with toppings, choose a size, and see the final cost.
 
-### Specifications
+## Specifications
 
 | Behavior |   Input   |   Output   |
 |----------|:---------:|:----------:|
@@ -18,14 +18,14 @@
 | Calculate or adjust price based on size and toppings| Next pizza has more toppings selected and is larger | Price goes up $0.75 for each additional topping and $3.50 for each larger size |
 
 
-### Setup and Installation Requirements
+## Setup and Installation Requirements
 
 Clone this repository (insert link), download or switch to your directory, or open the index.html page.
 
 ### Known Bugs
 * None yet
 
-### Technologies Used
+## Technologies Used
 
 * Atom
 * Git
@@ -34,6 +34,6 @@ Clone this repository (insert link), download or switch to your directory, or op
 * CSS
 * HTML
 
-#Licensing and Copyright
+### Licensing and Copyright
 
 #### MIT License Copyright (c) 2017 by Oliver Fu
