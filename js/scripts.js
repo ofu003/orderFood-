@@ -16,8 +16,12 @@ Pizza.prototype.Price = function(){
   else if (this.Size==="medium"){
     price=price;
   }
-  else {
+  else if (this.Size==="large"){
     price = price + 3.50;
+  }
+  else{
+    alert("Please make a valid selection");
+    location.reload();
   }
   var increment = this.numberOfToppings*0.75;
   var finalPrice= increment + price;
