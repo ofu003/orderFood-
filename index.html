@@ -1,103 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-  <meta charset="utf-8">
-  <title>Order Your Pizza Online</title>
-</head>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Order Your Pizza Online</title>
+  </head>
 
-<body>
-
-  <div class="row">
-    <div class="col-md-8">
-      <div class="header">
-        <h1>Customize Your Pizza Here</h1>
+  <body>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="header">
+          <h1>Customize Your Pizza Here</h1>
+        </div>
+        <div class="container">
+          <form id="form">
+            <p>Choose pizza size:</p>
+            <select id="size">
+              <option value=""></option>
+              <option value="small"><strong>Small: 9 inches</strong> </option>
+              <option value="medium"><strong>Medium: 12 inches</strong></option>
+              <option value="large"><strong>Large: 15 inches</strong></option>
+            </select>
+            <br>
+            <br>
+            <div id="toppings">
+              <p>All of our pizzas are oven baked with marinara sauce and mozzarella cheese. Choose additional toppings here</p>
+              <br>
+              <p><span class="categoryToppings">Vegetable and Fruit toppings!</span></p>
+              <div class="row">
+                <div class="col-md-3">
+                  <input type="checkbox" name="toppings" value=" pineapple">Diced Pineapple<br>
+                  <input type="checkbox" name="toppings" value=" tomato">Sliced Tomatoes<br>
+                  <input type="checkbox" name="toppings" value=" green bell pepper">Green Bell Peppers<br>
+                  <input type="checkbox" name="toppings" value=" red bell pepper">Red Bell Peppers<br>
+                </div>
+                <div class="col-md-3">
+                  <input type="checkbox" name="toppings" value=" spinach leaves">Spinach Leaves<br>
+                  <input type="checkbox" name="toppings" value=" broccoli">Broccoli<br>
+                  <input type="checkbox" name="toppings" value=" jalapeno pepper">Jalape&ntildeo Peppers<br>
+                  <input type="checkbox" name="toppings" value=" roasted garlic">Roasted Garlic<br>
+                </div>
+              </div>
+              <br>
+              <p><span class="categoryToppings">Meat and Vegetarian Protein Sources!</span></p>
+              <div class="row">
+                <div class="col-md-3">
+                  <input type="checkbox" name="toppings" value=" bacon bits">Bacon Bits<br>
+                  <input type="checkbox" name="toppings" value=" ground beef">Ground Beef<br>
+                  <input type="checkbox" name="toppings" value=" pepperoni">Pepperoni<br>
+                  <input type="checkbox" name="toppings" value=" salami">Salami<br>
+                  <input type="checkbox" name="toppings" value=" sausage">Sausage<br>
+                </div>
+                <div class="col-md-3">
+                  <input type="checkbox" name="toppings" value=" tuna">Tuna<br>
+                  <input type="checkbox" name="toppings" value=" lamb shawarma">Lamb Shawarma<br>
+                  <input type="checkbox" name="toppings" value=" tofu">Tofu<br>
+                  <input type="checkbox" name="toppings" value=" tempeh">Tempeh<br>
+                  <input type="checkbox" name="toppings" value=" seitan">Seitan<br>
+                  <br>
+                </div>
+              </div>
+              <p><span class="categoryToppings">Extra Cheese and Sauce!</span></p>
+              <div class="row">
+                <div class="col-md-3">
+                  <input type="checkbox" name="toppings" value=" parmesan cheese">Parmesan Cheese<br>
+                  <input type="checkbox" name="toppings" value=" feta cheese">Feta Cheese<br>
+                  <input type="checkbox" name="toppings" value=" goat cheese">Goat Cheese<br>
+                </div>
+                <div class="col-md-3">
+                  <input type="checkbox" name="toppings" value=" ranch sauce">Ranch Sauce<br>
+                  <input type="checkbox" name="toppings" value=" pesto sauce">Pesto Sauce<br>
+                  <input type="checkbox" name="toppings" value=" mayonnaise">Mayonnaise<br>
+                </div>
+              </div>
+            </div>
+            <br>
+            <button type="submit"><strong>Place Order</strong></button>
+            <button type="reset"><strong>Clear Selection</strong></button>
+          </form>
+        </div>
       </div>
 
-      <div class="container">
-        <form id="form">
-          <p>Choose pizza size:</p>
-
-          <select id="size">
-            <option value="small">Small: 9 inches </option>
-            <option value="medium">Medum: 12 inches</option>
-            <option value="large">Large: 15 inches</option>
-          </select>
-          <br>
-          <br>
-          <div id="toppings">
-            <p>All our pizzas are oven baked with marinara sauce and mozzarella cheese. Choose additional toppings here</p>
-            <br>
-            <p><span class="categoryToppings">Vegetable/Fruit toppings!</span></p>
-            <div class="row">
-              <div class="col-md-3">
-                <input type="checkbox" name="toppings" value=" pineapple">Diced Pineapple<br>
-                <input type="checkbox" name="toppings" value=" tomato">Sliced Tomatoes<br>
-                <input type="checkbox" name="toppings" value=" green bell pepper">Green Bell Peppers<br>
-                <input type="checkbox" name="toppings" value=" red bell pepper">Red Bell Peppers<br>
-              </div>
-              <div class="col-md-3">
-                <input type="checkbox" name="toppings" value=" spinach leaves">Spinach Leaves<br>
-                <input type="checkbox" name="toppings" value=" broccoli">Broccoli<br>
-                <input type="checkbox" name="toppings" value=" jalapeno pepper">Jalape&ntildeo Peppers<br>
-                <input type="checkbox" name="toppings" value=" roasted garlic">Roasted Garlic<br>
-              </div>
-            </div>
-            <br>
-            <p><span class="categoryToppings">Meat/Vegetarian Meat toppings!</span></p>
-            <div class="row">
-              <div class="col-md-3">
-                <input type="checkbox" name="toppings" value=" bacon bits">Bacon Bits<br>
-                <input type="checkbox" name="toppings" value=" ground beef">Ground Beef<br>
-                <input type="checkbox" name="toppings" value=" pepperoni">Pepperoni<br>
-                <input type="checkbox" name="toppings" value=" salami">Salami<br>
-                <input type="checkbox" name="toppings" value=" sausage">Sausage<br>
-              </div>
-              <div class="col-md-3">
-                <input type="checkbox" name="toppings" value=" tuna">Tuna<br>
-                <input type="checkbox" name="toppings" value=" lamb shawarma">Lamb Shawarma<br>
-                <input type="checkbox" name="toppings" value=" tofu">Tofu<br>
-                <input type="checkbox" name="toppings" value=" tempeh">Tempeh<br>
-                <input type="checkbox" name="toppings" value=" seitan">Seitan<br>
-                <br>
-              </div>
-            </div>
-            <p><span class="categoryToppings">Extra Cheese/Sauce!</span></p>
-            <div class="row">
-              <div class="col-md-3">
-                <input type="checkbox" name="toppings" value=" parmesan cheese">Parmesan Cheese<br>
-                <input type="checkbox" name="toppings" value=" feta cheese">Feta Cheese<br>
-                <input type="checkbox" name="toppings" value=" goat cheese">Goat Cheese<br>
-              </div>
-              <div class="col-md-3">
-                <input type="checkbox" name="toppings" value=" ranch sauce">Ranch Sauce<br>
-                <input type="checkbox" name="toppings" value=" pesto sauce">Pesto Sauce<br>
-                <input type="checkbox" name="toppings" value=" mayonnaise">Mayonnaise<br>
-              </div>
-            </div>
-          </div>
-          <br>
-          <button type="submit">Submit</button>
-        </form>
+      <div class="col-md-2" id="gifColumn">
+        <img id="img" src="img/giphy.gif" alt="Pizza Band GIF" style="width:500px;height:278px;">
       </div>
+
     </div>
+    <br>
+    <br>
 
-    <div class="col-md-2" id="gifColumn">
-      <img id="img" src="img/giphy.gif" alt="Pizza Band GIF" style="width:500px;height:278px;">
-    </div>
+    <span id="answers">
+    </span>
 
-
-  </div>
-  <br>
-  <br>
-  <span id="answers">
-  </span>
-
-</body>
+  </body>
 </html>

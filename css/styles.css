@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+.container{
+  margin-top: 22px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+#toppings{
+  border-style: outset;
+  border-color: #99ccff;
+  /*--#0066ff;-->*/
+  padding: 30px;
+  border-radius: 35px;
+  border-width: thick;
+  font-size: 14px;
+  background-color: #ffffe6
+}
+
+input {
+  font-size: 22px; 
+}
+
+.categoryToppings {
+  font-size: 22px;
+  font-family: Lobster;
+  color: blue ;
+}
+
+p {
+  font-size: 20px;
+  font-family: serif;
+}
+
+#answers{
+  font-style: oblique;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#img{
+  display: block;
+  margin: auto;
+  align: center;
+  margin-top: 150px;
+}
+
+h1{
+  font-family: Lobster;
+  font-size: 45px;
+  color: red;
+}
+
+body {
+  background-image: url(http://68.media.tumblr.com/2d4d466008847e57309e443e07c53df7/tumblr_inline_mum59h8b4M1ry1icv.jpg) ;
+}
+
+.header {
+  margin-left: 200px;
+  margin-top: 150px;
+}
