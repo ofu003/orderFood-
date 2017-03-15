@@ -20,7 +20,7 @@
 }
 
 input {
-  font-size: 22px; 
+  font-size: 22px;
 }
 
 .categoryToppings {
@@ -39,6 +39,11 @@ p {
   font-size: 20px;
   margin-left: 40px;
   margin-right: 40px;
+  border-style: double;
+  border-radius: 15px;
+  border-color: #003366;
+  display: none;
+  padding: 10px;  
 }
 
 #img{

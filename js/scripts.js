@@ -38,12 +38,16 @@ $(function(){
       var inputToppings = $(this).val();
       arrayToppings.push(inputToppings);
       var newPizza = new Pizza(inputSize, arrayToppings);
+      $("#answers").show();
       $("#answers").text(newPizza.fullDetails());
       $("#answers").append(newPizza.Price());
     });
   });
-  $("form#form").reset(function(event){
+  $("#reset").click(function(event){
     event.preventDefault();
+    $("#answers").hide();
+    arrayToppings=[];
+    $("input:checkbox[name=toppings]:selected").prop("selected", false);
     location.reload();
   })
 })
